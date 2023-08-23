@@ -1,0 +1,454 @@
+[data-scroll-container] {
+  perspective: 999999px !important;
+}
+
+::selection {
+  background-color: brown;
+  color: #ffffff;
+  mix-blend-mode: difference;
+}
+
+.c-scrollbar_thumb {
+  background-color: #ffffff !important;
+  opacity: 0.7 !important;
+  mix-blend-mode: difference;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1000;
+  margin: 0 auto;
+  padding: 20px 100px;
+  max-width: 1366px;
+  mix-blend-mode: difference;
+}
+
+main.dark {
+  background-color: var(--dark-gray);
+}
+
+main.light {
+  padding-bottom: 120px;
+  background-color: var(--light-gray);
+}
+
+.__link {
+  position: relative;
+}
+
+.__link::before {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: -2.5px;
+  width: 0;
+  height: 2px;
+  background-color: #ffffff;
+  transition: width 0.2s ease;
+}
+
+.__link:hover::before {
+  right: auto;
+  left: 0;
+  width: 100%;
+}
+
+.text {
+  font-family: 'SF Pro Display', sans-serif;
+  font-size: 1.3rem;
+  color: var(--light-gray);
+}
+
+.toggle-menu {
+  width: 28px;
+  height: 16px;
+}
+
+.__bar {
+  width: 100%;
+  height: 2px;
+  background-color: #ffffff;
+}
+
+.header.section {
+  padding-top: 120px;
+}
+
+.section {
+  margin: 0 auto;
+  padding: 0 100px;
+  width: 100%;
+  max-width: 1366px;
+}
+
+.header__heading {
+  position: relative;
+  z-index: 2;
+  font-family: 'SF Pro Display', sans-serif;
+  font-size: 12rem;
+  color: var(--light-gray);
+  letter-spacing: -0.02em;
+}
+
+.hero--image {
+  margin-top: -4.2rem;
+  width: 100%;
+  border-radius: 1rem;
+  filter: brightness(90%) saturate(80%);
+  object-fit: cover;
+}
+
+.header__paragraph-1 {
+  max-width: 520px;
+  font-size: 1.9rem;
+}
+
+.sub-title {
+  font-family: 'SF Pro Display', sans-serif;
+  font-size: 3.2rem;
+  color: var(--light-gray);
+}
+
+.heading {
+  position: relative;
+  z-index: 2;
+  font-family: 'Magirosh', serif;
+  font-size: 7rem;
+  color: var(--light-gray);
+}
+
+.works .row:not(:nth-child(1), :nth-child(2)) {
+  margin-top: -8rem;
+}
+
+.works .texts {
+  width: 250px;
+}
+
+.works .__link::before {
+  background-color: var(--light-gray);
+}
+
+.label {
+  padding: 4px 20px;
+  border: 1px solid var(--light-gray);
+  border-radius: 100px;
+}
+
+.number {
+  font-family: 'Magirosh', serif;
+  font-size: 1.3rem;
+  color: var(--light-gray);
+}
+
+.works .sub-hero--image1,
+.works .sub-hero--image2,
+.works .sub-hero--image3,
+.works .sub-hero--image4 {
+  max-width: 300px;
+  border-radius: 1rem;
+}
+
+.works .sub-hero--image3 {
+  filter: brightness(110%);
+}
+
+.max-w_480 {
+  max-width: 480px;
+}
+
+.text.info {
+  color: var(--gray);
+}
+
+.about {
+  margin: 0 auto;
+  padding: 20px;
+  width: 100%;
+  max-width: 1366px;
+}
+
+.about__canvas {
+  padding: 120px 80px;
+  background-color: var(--light-gray);
+  border-radius: 1rem;
+}
+
+.about .heading {
+  color: var(--dark-gray);
+}
+
+.sticker--wrapper {
+  width: 167px;
+  height: 167px;
+}
+
+.about .sticker {
+  width: 100%;
+}
+
+.about .text {
+  color: var(--dark-gray);
+}
+
+.about .sub-title {
+  color: var(--dark-gray);
+}
+
+.overall {
+  margin: 0 auto;
+  padding: 0 100px;
+  padding-bottom: 120px;
+  width: 100%;
+  max-width: 1366px;
+}
+
+.overall .sub-title {
+  color: var(--light-gray);
+}
+
+.shop {
+  margin: 0 auto;
+  padding: 0 100px;
+  padding-top: 120px;
+  width: 100%;
+  max-width: 1366px;
+}
+
+.shop .heading {
+  color: var(--dark-gray);
+}
+
+.shop .text {
+  color: var(--dark-gray);
+}
+
+.swiper-slide {
+  position: relative;
+  border-radius: 1rem;
+  cursor: pointer;
+}
+
+.swiper-slide img {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide .product-info {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #30303088;
+  backdrop-filter: blur(1rem);
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s ease;
+}
+
+.swiper-slide:hover .product-info {
+  opacity: 1;
+  visibility: visible;
+}
+
+.product-info .text {
+  color: var(--light-gray);
+}
+
+.footer {
+  margin: 0 auto;
+  padding: 0 20px;
+  width: 100%;
+  max-width: 1366px;
+}
+
+.footer__canvas {
+  padding: 120px 80px;
+  background-color: var(--dark-gray);
+  border-radius: 1rem;
+}
+
+@media (max-width: 1023px) {
+  .navbar {
+    padding: 20px 30px;
+  }
+  
+  .section {
+    padding: 20px 30px;
+  }
+
+  .header__heading {
+    font-size: 22vw;
+  }
+  .works .row {
+    column-gap: 40px;
+  }
+
+  .works .row:not(:nth-child(1), :nth-child(2)) {
+    margin-top: -12rem;
+    margin-right: 0;
+  }
+
+  .works .sub-hero--image1 {
+    margin-left: 0;
+    object-fit: cover;
+    filter: brightness(80%);
+  }
+
+  .about {
+    padding: 20px 30px;
+  }
+
+  .about__canvas {
+    padding: 120px 60px;
+  }
+}
+
+@media (max-width: 767px) {
+  main.dark,
+  main.light {
+    row-gap: 80px;
+  }
+  
+  .navbar {
+    padding: 20px;
+  }
+
+  .text {
+    font-size: 1.1rem;
+  }
+  
+  .header.section {
+    padding: 0 20px 20px 20px;
+  }
+  
+  .section {
+    padding: 20px 20px;
+  }
+  
+  .headings {
+    padding: 0;
+    height: 100vh;
+  }
+  
+  .hero--image {
+    margin-top: 0;
+  }
+
+  .heading {
+    font-size: 3.5rem;
+  }
+
+  .sub-title {
+    font-size: 2.5rem;
+  }
+
+  .works .row:not(:nth-child(1), :nth-child(2)) {
+    margin-top: 0;
+    margin-right: 0;
+  }
+
+  .about__canvas {
+    padding: 40px 20px;
+  }
+}
+
+@media (max-width: 479px) {
+  .navbar {
+    padding: 10px;
+  }
+
+  .header.section {
+    padding: 0 10px;
+  }
+
+  .section {
+    padding: 0 10px;
+  }
+}
+
+@media (min-width: 1919px) {
+  .navbar {
+    max-width: 1920px;
+  }
+
+  .text {
+    font-size: 1.7rem;
+  }
+
+  .sub-title {
+    font-size: 3.8rem;
+  }
+
+  .header__heading {
+    font-size: 20rem;
+  }
+
+  .hero--image {
+    border-radius: 1.5rem;
+  }
+  
+  .section {
+    max-width: 1920px;
+  }
+  
+  .heading {
+    font-size: 8.2rem;
+  }
+
+  .works .texts {
+    width: 340px;
+  }
+
+  .label {
+    padding: 6px 30px;
+  }
+
+  .number {
+    font-size: 1.7rem;
+  }
+  
+  .works .sub-hero--image1,
+  .works .sub-hero--image2,
+  .works .sub-hero--image3,
+  .works .sub-hero--image4 {
+    max-width: 480px;
+    border-radius: 1.5rem;
+  }
+
+  .max-w_480 {
+    max-width: 612px;
+  }
+
+  .about {
+    max-width: 1920px;
+  }
+
+  .about__canvas {
+    border-radius: 1.5rem;
+  }
+
+  .overall {
+    max-width: 1920px;
+  }
+
+  .shop {
+    max-width: 1920px;
+  }
+
+  .swiper-slide {
+    border-radius: 1.5rem;
+  }
+
+  .footer {
+    max-width: 1920px;
+  }
+  
+  .footer__canvas {
+    border-radius: 1.5rem;
+  }
+}
